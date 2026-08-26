@@ -1,0 +1,35 @@
+name: Building WebDriverAgent (Xcode 26 / iOS 26)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  for_real_devices:
+    name: Build WDA for real iOS devices (Xcode 26)
+    runs-on: macos-26
+
+    env:
+      PKG_NAME_IOS: "WebDriverAgentRunner-Runner"
+      ZIP_PKG_NAME_IOS: "WebDriverAgentRunner-Runner.zip"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Show selected Xcode version
+        run: xcodebuild -version
+
+      - name: Create a zip file of WebDriverAgentRunner-Runner.app for iOS
+        run: sh $GITHUB_WORKSPACE/Scripts/ci/build-real.sh
+        env:
+          DERIVED_DATA_PATH: appium_wda_ios
+          SCHEME: WebDriverAgentRunner
+          DESTINATION: generic/platform=iOS
+          WD: appium_wda_ios/Build/Products/Debug-iphoneos
+          ZIP_PKG_NAME: "${{ env.ZIP_PKG_NAME_IOS }}"
+
+      - name: Upload the built generic app package for iOS
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.PKG_NAME_IOS }}"
+          path: "${{ env.ZIP_PKG_NAME_IOS }}"
