@@ -1,3 +1,45 @@
+## [16.12.8](https://github.com/appium/WebDriverAgent/compare/v16.12.7...v16.12.8) (2026-09-11)
+
+### Bug Fixes
+
+* use wdFrame instead of raw frame for scroll gesture anchor ([#1256](https://github.com/appium/WebDriverAgent/issues/1256)) ([9ada9fd](https://github.com/appium/WebDriverAgent/commit/9ada9fd4077796b7c1002292c21ec9e45fab4d89))
+
+## [16.12.7](https://github.com/appium/WebDriverAgent/compare/v16.12.6...v16.12.7) (2026-09-10)
+
+### Bug Fixes
+
+* remaining strong box file ([#1255](https://github.com/appium/WebDriverAgent/issues/1255)) ([f5f7004](https://github.com/appium/WebDriverAgent/commit/f5f70041e463777d7604e84fd8d27bf11cb268b9))
+
+## [16.12.6](https://github.com/appium/WebDriverAgent/compare/v16.12.5...v16.12.6) (2026-09-09)
+
+### Bug Fixes
+
+* rescale gesture coordinates for compatibility-mode window mismatches ([#1249](https://github.com/appium/WebDriverAgent/issues/1249)) ([25fcd95](https://github.com/appium/WebDriverAgent/commit/25fcd9558314c367c755b047cd0db0949654e90b))
+
+## [16.12.5](https://github.com/appium/WebDriverAgent/compare/v16.12.4...v16.12.5) (2026-09-07)
+
+### Bug Fixes
+
+* touch and scroll related view issue in IntegrationApp ([#1253](https://github.com/appium/WebDriverAgent/issues/1253)) ([34859e9](https://github.com/appium/WebDriverAgent/commit/34859e9b443c184505206576b3b531d85d2afbcf))
+
+## [16.12.4](https://github.com/appium/WebDriverAgent/compare/v16.12.3...v16.12.4) (2026-09-06)
+
+### Miscellaneous Chores
+
+* add coordinate screen in the integration app ([#1251](https://github.com/appium/WebDriverAgent/issues/1251)) ([de6acac](https://github.com/appium/WebDriverAgent/commit/de6acac7ebbaf70915f0c09093e3a12623efcea2))
+
+## [16.12.3](https://github.com/appium/WebDriverAgent/compare/v16.12.2...v16.12.3) (2026-09-04)
+
+### Bug Fixes
+
+* resolve key name lookup for dictionary-form keyboardInput keys ([#1247](https://github.com/appium/WebDriverAgent/issues/1247)) ([f40bac6](https://github.com/appium/WebDriverAgent/commit/f40bac6ea77f6220883fe4437ee63e51fe44d74f))
+
+## [16.12.2](https://github.com/appium/WebDriverAgent/compare/v16.12.1...v16.12.2) (2026-09-03)
+
+### Bug Fixes
+
+* allow pause action items to appear before any pointer movement ([#1246](https://github.com/appium/WebDriverAgent/issues/1246)) ([282478a](https://github.com/appium/WebDriverAgent/commit/282478a2e631501fd904b0675717123c779d9b84))
+
 ## [16.12.1](https://github.com/appium/WebDriverAgent/compare/v16.12.0...v16.12.1) (2026-09-01)
 
 ### Miscellaneous Chores
