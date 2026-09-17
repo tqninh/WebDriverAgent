@@ -6,7 +6,7 @@ on:
 jobs:
   for_real_devices:
     name: Build WDA for real iOS devices (Xcode 26)
-    runs-on: macos-26
+    runs-on: macos-27
 
     env:
       PKG_NAME_IOS: "WebDriverAgentRunner-Runner"
